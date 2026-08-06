@@ -1,0 +1,35 @@
+name: Feature proposal
+description: Propose a testable PetDiff or pet-tooling capability.
+title: "[Feature] "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What cannot a pet author or reviewer verify today?
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance command
+      description: Show how a maintainer could prove the feature works.
+    validations:
+      required: true
+  - type: textarea
+    id: failure
+    attributes:
+      label: Failure and repair behavior
+      description: State the expected exit code, evidence, and safe recovery.
+    validations:
+      required: true
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: Scope check
+      options:
+        - label: The proposal adds real behavior, not only a UI.
+          required: true
+        - label: The proposal does not require private Codex session content.
+          required: true

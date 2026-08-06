@@ -1,0 +1,22 @@
+Creative Commons Attribution 4.0 International
+
+This repository's Pepper reference images, generated derivative pet artwork,
+spritesheet, previews, and other artwork are distributed under the Creative
+Commons Attribution 4.0 International license.
+
+License text and legally authoritative terms:
+https://creativecommons.org/licenses/by/4.0/legalcode
+
+Human-readable summary:
+https://creativecommons.org/licenses/by/4.0/
+
+Attribution required by this project:
+
+Based on the webcomic Pepper&Carrot by David Revoy, licensed under Creative
+Commons Attribution 4.0 International (CC BY 4.0).
+https://www.peppercarrot.com/
+
+The Codex pet adaptation and generated animation artwork were created for this
+repository by KanadeK with OpenAI's built-in image generation tooling. Changes
+include chibi simplification, sprite-safe restyling, new animation poses,
+transparent-background extraction, atlas assembly, and direction animation.

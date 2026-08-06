@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "status": "accepted",
+  "finalAtlas": "final/spritesheet-extended.webp",
+  "finalAtlasSha256": "a4044ab731af28b7187a6a7374c8a7dcab441cfc36528e86feb0abf6486b73db",
+  "v2Validation": "validation-extended.json",
+  "chromaCleanup": "chroma-despill-extended.json",
+  "directionEvidence": {
+    "labeledSheet": "look-directions.png",
+    "blindValidation": "direction-blind-validation.json",
+    "continuity": "look-continuity.json",
+    "resolution": "direction-review-resolution.md",
+    "independentVisualQa": "PASS"
+  },
+  "sourceRows": {
+    "row9Sha256": "bceb3907845029152b7603dacbbe75cf5274d59cfafbb4ad69c8e75a6272d498",
+    "row10Sha256": "6f2fecd42b9fa88f1bce8bacc958669e3d9d028c792869bc0fd5b1685deb240d"
+  }
+}

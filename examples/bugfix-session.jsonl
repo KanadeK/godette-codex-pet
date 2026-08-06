@@ -1,0 +1,11 @@
+{"at_ms":0,"state":"idle","label":"Open the task"}
+{"at_ms":800,"state":"running-right","label":"Move into the worktree"}
+{"at_ms":1600,"state":"running","label":"Trace the failing path"}
+{"at_ms":2800,"state":"waiting","label":"Ask for one decision"}
+{"at_ms":3600,"state":"waving","label":"Decision received"}
+{"at_ms":4300,"state":"jumping","label":"Focused test passes"}
+{"at_ms":5100,"state":"running-left","label":"Return to the result"}
+{"at_ms":5900,"state":"failed","label":"Release gate catches a stale checksum"}
+{"at_ms":7000,"state":"review","label":"Review repaired artifacts"}
+{"at_ms":8300,"state":"look","direction_deg":90,"label":"Check the right-hand diff"}
+{"at_ms":8800,"state":"idle","duration_ms":800,"label":"Ready"}

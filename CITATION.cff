@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: If you use PetDiff CI in a pet toolchain, cite this repository.
+title: Godette Codex Pet and PetDiff CI
+type: software
+authors:
+  - family-names: KanadeK
+version: 0.1.0
+date-released: 2026-07-30
+license: MIT
+repository-code: https://github.com/KanadeK/godette-codex-pet
+url: https://kanadek.github.io/godette-codex-pet/
+keywords:
+  - Codex pet
+  - visual regression
+  - sprite atlas
+  - Godette
+  - Godot
+preferred-citation:
+  type: software
+  title: Godette Codex Pet and PetDiff CI
+  authors:
+    - family-names: KanadeK
+  year: 2026
+  version: 0.1.0
+  url: https://github.com/KanadeK/godette-codex-pet

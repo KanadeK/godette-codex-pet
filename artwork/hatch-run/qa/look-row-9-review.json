@@ -1,0 +1,63 @@
+{
+  "ok": true,
+  "row": 9,
+  "registered_strip": "qa/look-row-9-registered.png",
+  "directions": [
+    {
+      "degree": "000",
+      "verdict": "pass",
+      "horizontal": "neutral",
+      "vertical": "up: pupils rise and chin lifts on a frontal body"
+    },
+    {
+      "degree": "022.5",
+      "verdict": "pass",
+      "horizontal": "screen-right: face begins turning toward the right edge",
+      "vertical": "up: pupils and head angle remain raised"
+    },
+    {
+      "degree": "045",
+      "verdict": "pass",
+      "horizontal": "screen-right: nose and face plane advance right",
+      "vertical": "up: gaze remains above the eye centers"
+    },
+    {
+      "degree": "067.5",
+      "verdict": "pass",
+      "horizontal": "screen-right: near-profile face and backpack occlusion agree",
+      "vertical": "up: eyes retain a visible upward cue"
+    },
+    {
+      "degree": "090",
+      "verdict": "pass",
+      "horizontal": "screen-right: nose tip, pupils, and face profile point at the right edge",
+      "vertical": "neutral"
+    },
+    {
+      "degree": "112.5",
+      "verdict": "pass",
+      "horizontal": "screen-right: face remains right-facing while yaw starts to decrease",
+      "vertical": "down: pupils and chin begin dropping"
+    },
+    {
+      "degree": "135",
+      "verdict": "pass",
+      "horizontal": "screen-right: remaining cheek and nose cues stay on the right",
+      "vertical": "down: lowered gaze and head pitch are clear"
+    },
+    {
+      "degree": "157.5",
+      "verdict": "pass",
+      "horizontal": "screen-right: a subtle right cue remains on an almost frontal body",
+      "vertical": "down: pupils, eyelids, and chin approach the approved 180 anchor"
+    }
+  ],
+  "continuity": {
+    "verdict": "pass",
+    "evidence": "All adjacent poses use similar visual steps, fixed feet and baseline, stable scale, continuous backpack occlusion, and no reversal or rear view. The 157.5 pose is one small return-to-frontal step from the approved 180 down anchor."
+  },
+  "edge_check": {
+    "verdict": "pass",
+    "evidence": "Deterministic shared-scale registration completed without a near-edge clipping failure."
+  }
+}

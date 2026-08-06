@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "character": "Godette / Godot-chan",
+  "upstream": {
+    "repository": "https://github.com/godotengine/godot-design",
+    "commit": "7d12f300c377712028e9af6be01511b3e05a534c",
+    "license": "CC BY 4.0",
+    "attribution": "Godette character design by Andrea Calabró.",
+    "referenceSha256": {
+      "godette-body-7d12f30.png": "57a00013441ba0b0adc48ecfcc7c97fe218554e1d709fdd19431e72aee62a629",
+      "godette-expressions-7d12f30.png": "9a533893e86f83dbe4fa4f51c07b48a27374b056d3db200adfc1f20bb827e113",
+      "godette-official-2021.png": "88b49434a46ea2733b8215079a0bc89d4081eec81d442254f5188e298b35e7c0"
+    }
+  },
+  "derivative": {
+    "atlasSha256": "a4044ab731af28b7187a6a7374c8a7dcab441cfc36528e86feb0abf6486b73db",
+    "license": "CC BY 4.0",
+    "generation": "ImageGen-created coherent animation rows, then deterministic V2 registration and fixed-parameter chroma cleanup.",
+    "directionRows": {
+      "row9SourceSha256": "bceb3907845029152b7603dacbbe75cf5274d59cfafbb4ad69c8e75a6272d498",
+      "row10SourceSha256": "6f2fecd42b9fa88f1bce8bacc958669e3d9d028c792869bc0fd5b1685deb240d"
+    }
+  }
+}

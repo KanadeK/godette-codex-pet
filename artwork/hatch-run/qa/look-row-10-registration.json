@@ -1,0 +1,6 @@
+{
+  "scale": 0.4,
+  "source_row": "decoded/look-row-10.png",
+  "method": "one shared deterministic registration scale for the complete generated row",
+  "evidence": "Independent visual QA passed after correcting the row-wide 157.5-to-180 and 337.5-to-000 scale/anchor discontinuities."
+}

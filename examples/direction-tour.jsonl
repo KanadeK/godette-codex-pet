@@ -1,0 +1,16 @@
+{"at_ms":0,"state":"look","direction_deg":0,"label":"000 up"}
+{"at_ms":250,"state":"look","direction_deg":22.5,"label":"022.5 up-right"}
+{"at_ms":500,"state":"look","direction_deg":45,"label":"045 up-right"}
+{"at_ms":750,"state":"look","direction_deg":67.5,"label":"067.5 up-right"}
+{"at_ms":1000,"state":"look","direction_deg":90,"label":"090 right"}
+{"at_ms":1250,"state":"look","direction_deg":112.5,"label":"112.5 down-right"}
+{"at_ms":1500,"state":"look","direction_deg":135,"label":"135 down-right"}
+{"at_ms":1750,"state":"look","direction_deg":157.5,"label":"157.5 down-right"}
+{"at_ms":2000,"state":"look","direction_deg":180,"label":"180 down"}
+{"at_ms":2250,"state":"look","direction_deg":202.5,"label":"202.5 down-left"}
+{"at_ms":2500,"state":"look","direction_deg":225,"label":"225 down-left"}
+{"at_ms":2750,"state":"look","direction_deg":247.5,"label":"247.5 down-left"}
+{"at_ms":3000,"state":"look","direction_deg":270,"label":"270 left"}
+{"at_ms":3250,"state":"look","direction_deg":292.5,"label":"292.5 up-left"}
+{"at_ms":3500,"state":"look","direction_deg":315,"label":"315 up-left"}
+{"at_ms":3750,"state":"look","direction_deg":337.5,"duration_ms":250,"label":"337.5 up-left"}

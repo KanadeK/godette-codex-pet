@@ -1,0 +1,54 @@
+name: Bug report
+description: Report reproducible behavior in the CLI, Action, package, or site.
+title: "[Bug] "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Do not attach raw Codex logs, prompts, tool payloads, or private paths.
+  - type: input
+    id: version
+    attributes:
+      label: Release or commit
+      placeholder: v0.1.0 or full commit SHA
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - PetDiff CI
+        - Atlas validation
+        - Install or rollback
+        - Packaging
+        - Browser lab
+        - Documentation
+    validations:
+      required: true
+  - type: textarea
+    id: command
+    attributes:
+      label: Reproduction command and fixture
+      description: Use a minimal synthetic or public fixture.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior and JSON output
+    validations:
+      required: true
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy check
+      options:
+        - label: I removed prompts, tool payloads, accounts, emails, and private paths.
+          required: true

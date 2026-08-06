@@ -1,0 +1,19 @@
+include LICENSE
+include README.md
+include README.zh-CN.md
+include CHANGELOG.md
+include CITATION.cff
+include CODE_OF_CONDUCT.md
+include NOTICE.md
+include ASSET_LICENSE.md
+include SECURITY.md
+include SUPPORT.md
+include CONTRIBUTING.md
+include action.yml
+recursive-include LICENSES *.txt
+recursive-include docs *.md *.gif *.png
+recursive-include examples *.jsonl
+recursive-include pet *.json *.webp
+recursive-include scripts *.py
+recursive-include web *.html *.css *.mjs
+prune web/tests

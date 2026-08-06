@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "retrieved_at": "2026-07-30",
+  "character": "Godette / Godot-chan",
+  "character_designer": "Andrea Calabró",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "upstream_commit": "7d12f300c377712028e9af6be01511b3e05a534c",
+  "sources": [
+    {
+      "local_path": "godette-body-7d12f30.png",
+      "source_url": "https://raw.githubusercontent.com/godotengine/godot-design/7d12f300c377712028e9af6be01511b3e05a534c/godette/godette_body.png",
+      "sha256": "57a00013441ba0b0adc48ecfcc7c97fe218554e1d709fdd19431e72aee62a629",
+      "purpose": "official body turnaround, outfit, palette, and silhouette"
+    },
+    {
+      "local_path": "godette-expressions-7d12f30.png",
+      "source_url": "https://raw.githubusercontent.com/godotengine/godot-design/7d12f300c377712028e9af6be01511b3e05a534c/godette/godette_expressions.png",
+      "sha256": "9a533893e86f83dbe4fa4f51c07b48a27374b056d3db200adfc1f20bb827e113",
+      "purpose": "official eyes, face construction, and expression language"
+    },
+    {
+      "local_path": "godette-official-2021.png",
+      "source_url": "https://godotengine.org/article/godot-has-been-renamed-godette-engine/",
+      "sha256": "88b49434a46ea2733b8215079a0bc89d4081eec81d442254f5188e298b35e7c0",
+      "purpose": "official article context and identity cross-check"
+    }
+  ]
+}

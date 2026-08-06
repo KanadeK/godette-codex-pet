@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Godette for Codex plus a real visual regression gate for every v2 pet."
+    >
+    <meta name="robots" content="index,follow">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Godette / PetDiff CI">
+    <meta property="og:title" content="Godette / PetDiff CI">
+    <meta
+      property="og:description"
+      content="A complete Codex v2 pet and a decoded-pixel visual regression gate for all 74 required cells."
+    >
+    <meta property="og:url" content="https://kanadek.github.io/godette-codex-pet/">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Godette / PetDiff CI">
+    <meta
+      name="twitter:description"
+      content="A complete Codex v2 pet plus an Action, CLI, and in-browser atlas diff."
+    >
+    <meta name="theme-color" content="#348f83">
+    <title>Godette / PetDiff CI</title>
+    <link rel="canonical" href="https://kanadek.github.io/godette-codex-pet/">
+    <link rel="stylesheet" href="./styles.css">
+    <script type="module" src="./app.mjs"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#petdiff-lab">Skip to PetDiff Lab</a>
+    <header class="site-header">
+      <a class="wordmark" href="./" aria-label="Godette PetDiff home">Godette / PetDiff</a>
+      <nav aria-label="Primary">
+        <a href="#petdiff-lab">Lab</a>
+        <a href="#method">Method</a>
+        <a href="https://github.com/KanadeK/godette-codex-pet">GitHub</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Codex pet visual regression</p>
+          <h1 id="hero-title">Meet Godette.<span>Audit 74 cells.</span></h1>
+          <p class="hero-lede">
+            Godette ships with a real pixel-budget CI gate for every Codex v2 pet.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#petdiff-lab">Compare an atlas</a>
+            <a class="button secondary" href="https://github.com/KanadeK/godette-codex-pet">
+              Read the source
+            </a>
+          </div>
+        </div>
+        <figure class="godette-stage">
+          <canvas
+            id="godette-canvas"
+            width="192"
+            height="208"
+            role="img"
+            aria-label="Godette playing the idle animation"
+          ></canvas>
+          <figcaption>Point around Godette to inspect all 16 look directions.</figcaption>
+        </figure>
+      </section>
+
+      <section id="petdiff-lab" class="lab-section" aria-labelledby="lab-title">
+        <div class="section-heading">
+          <p class="eyebrow">Run it in this page</p>
+          <h2 id="lab-title">A browser check backed by decoded pixels.</h2>
+          <p>
+            Load a 1536 x 2288 PNG or WebP. Comparison stays in this browser.
+          </p>
+        </div>
+
+        <div class="lab">
+          <form id="lab-form" class="lab-controls">
+            <label class="file-control" for="candidate-file">
+              Candidate atlas
+              <input id="candidate-file" type="file" accept="image/png,image/webp">
+            </label>
+
+            <label class="tolerance-control" for="tolerance">
+              Channel tolerance
+              <span><output id="tolerance-value" for="tolerance">0</output> / 255</span>
+              <input id="tolerance" type="range" min="0" max="32" value="0" step="1">
+            </label>
+
+            <div class="control-actions">
+              <button id="compare-button" class="button primary" type="button" disabled>
+                Compare 74 cells
+              </button>
+              <button id="reset-candidate" class="button secondary" type="button">
+                Use bundled Godette
+              </button>
+            </div>
+            <p id="load-status" class="load-status" role="status">
+              Loading the validated Godette atlas.
+            </p>
+          </form>
+
+          <section class="lab-result" aria-live="polite" aria-labelledby="result-title">
+            <div class="result-heading">
+              <h3 id="result-title">Decoded comparison</h3>
+              <strong id="result-verdict" data-state="working">LOADING</strong>
+            </div>
+            <p id="result-summary">Preparing the baseline.</p>
+            <ol id="changed-list" class="changed-list">
+              <li>Results appear after the production atlas loads.</li>
+            </ol>
+          </section>
+
+          <figure class="diff-preview">
+            <figcaption id="preview-title">Baseline, candidate, changed pixels</figcaption>
+            <div class="preview-grid">
+              <canvas id="before-canvas" width="192" height="208" aria-label="Baseline cell"></canvas>
+              <canvas id="after-canvas" width="192" height="208" aria-label="Candidate cell"></canvas>
+              <canvas id="delta-canvas" width="192" height="208" aria-label="Changed pixels"></canvas>
+            </div>
+          </figure>
+        </div>
+      </section>
+
+      <section id="method" class="method" aria-labelledby="method-title">
+        <div class="section-heading">
+          <h2 id="method-title">The v2 contract becomes a review policy.</h2>
+          <p>CLI and Action reports retain the exact budget and every measured cell.</p>
+        </div>
+        <div class="method-grid">
+          <article class="method-primary">
+            <span class="metric">74</span>
+            <h3>Required cells compared</h3>
+            <p>Nine animation rows and sixteen look directions are checked after validation.</p>
+          </article>
+          <article>
+            <span class="metric">RGBA</span>
+            <h3>Decoded pixels</h3>
+            <p>Compression bytes never hide a visible change.</p>
+          </article>
+          <article>
+            <span class="metric">3</span>
+            <h3>Evidence files</h3>
+            <p>JSON for CI, HTML for review, PNG for focused inspection.</p>
+          </article>
+          <article class="method-command">
+            <h3>Strict by default</h3>
+            <pre><code>godette-pet diff baseline/pet pet \
+  --output-dir petdiff-report \
+  --max-changed-cells 0</code></pre>
+          </article>
+        </div>
+      </section>
+
+      <section class="ship" aria-labelledby="ship-title">
+        <div>
+          <h2 id="ship-title">Hatch the art. Keep the evidence.</h2>
+          <p>
+            Validation, deterministic replay, safe install, rollback, reproducible ZIPs,
+            CI, and repair commands ship in the same repository.
+          </p>
+        </div>
+        <a class="button primary" href="https://github.com/KanadeK/godette-codex-pet/releases">
+          Download the release
+        </a>
+      </section>
+    </main>
+
+    <footer>
+      <div>
+        <p>Code: MIT. Godette derivative art: CC BY 4.0.</p>
+        <p>Unofficial project. No affiliation with Godot Engine, OpenAI, or Codex.</p>
+      </div>
+      <label class="theme-control" for="theme-select">
+        Color theme
+        <select id="theme-select">
+          <option value="auto">System</option>
+          <option value="light">Light</option>
+          <option value="dark">Dark</option>
+        </select>
+      </label>
+    </footer>
+  </body>
+</html>
