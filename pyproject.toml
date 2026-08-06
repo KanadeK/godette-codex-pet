@@ -42,7 +42,7 @@ dev = [
   "pytest>=8.3,<9",
   "pytest-cov>=6,<7",
   "ruff>=0.12,<1",
-  "setuptools>=70,<82",
+  "setuptools>=70,<84",
   "wheel>=0.45,<1",
 ]
 
