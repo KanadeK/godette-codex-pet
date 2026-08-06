@@ -32,3 +32,7 @@ def main() -> None:
         newline="\n",
     )
     print(output)
+
+
+if __name__ == "__main__":
+    main()
