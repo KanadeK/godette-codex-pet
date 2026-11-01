@@ -33,7 +33,7 @@ classifiers = [
   "Topic :: Multimedia :: Graphics",
   "Topic :: Software Development :: Quality Assurance",
 ]
-dependencies = ["Pillow>=10.4,<13"]
+dependencies = ["Pillow>=10.4,<14"]
 
 [project.optional-dependencies]
 dev = [
